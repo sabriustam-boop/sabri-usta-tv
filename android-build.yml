@@ -1,0 +1,46 @@
+name: Sabri Usta TV - Derleme
+
+on:
+  push:
+    branches: [ "**" ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: Test, Lint ve APK
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4.2.2
+      - uses: actions/setup-java@v4.7.0
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: android-actions/setup-android@v3.2.2
+      - uses: gradle/actions/setup-gradle@v4.2.2
+        with:
+          gradle-version: '8.13'
+      - name: Gradle wrapper uret
+        run: gradle wrapper --gradle-version 8.13
+      - name: Unit testler
+        run: ./gradlew testDebugUnitTest --stacktrace
+      - name: Debug APK
+        run: ./gradlew assembleDebug --stacktrace
+      - name: Release APK
+        run: ./gradlew assembleRelease --stacktrace
+      - name: APK topla
+        run: |
+          mkdir -p ciktilar
+          cp $(find app/build/outputs/apk/debug -name "*.apk" | head -n1) ciktilar/sabri-usta-tv-v1.0.0-debug.apk
+          cp $(find app/build/outputs/apk/release -name "*.apk" | head -n1) ciktilar/sabri-usta-tv-v1.0.0-release-unsigned.apk
+          cd ciktilar && sha256sum *.apk | tee SHA256SUMS.txt
+      - uses: actions/upload-artifact@v4.6.0
+        with:
+          name: sabri-usta-tv-apk
+          path: |
+            ciktilar/*.apk
+            ciktilar/SHA256SUMS.txt
+          if-no-files-found: error
