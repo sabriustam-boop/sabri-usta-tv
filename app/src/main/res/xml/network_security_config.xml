@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Varsayilan olarak TLS zorunludur. Kullanicinin Ayarlar > "HTTP yayinlarina izin ver"
+  secenegini acikca acmasi durumunda calisabilmesi icin platform seviyesinde cleartext
+  izni acik birakilmistir; asil engelleme uygulama katmaninda UrlValidator tarafindan
+  yapilir ve varsayilan degeri KAPALI'dir. Ayrintili aciklama README > Guvenlik bolumunde.
+-->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="true">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+    <domain-config cleartextTrafficPermitted="false">
+        <domain includeSubdomains="true">localhost</domain>
+        <domain includeSubdomains="true">127.0.0.1</domain>
+    </domain-config>
+</network-security-config>

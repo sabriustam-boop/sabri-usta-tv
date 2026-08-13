@@ -1,0 +1,114 @@
+{
+  "version": 1,
+  "note": "Bu katalog yalnizca yayincisi tarafindan acikca ucretsiz/serbest dagitima acilmis veya kamu mali olan kaynaklari icerir. Adresler yayinci tarafindan degistirilebilir; calismayan kaynak uygulamayi bozmaz, kullaniciya hata mesaji gosterilir.",
+  "sources": [
+    {
+      "id": "nasa-tv-public",
+      "name": "NASA TV Public",
+      "publisher": "NASA",
+      "url": "https://ntv1.akamaized.net/hls/live/2014075/NASA-NTV1-HD/master.m3u8",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/e/e5/NASA_logo.svg",
+      "country": "ABD",
+      "category": "Bilim",
+      "type": "TV",
+      "sourcePage": "https://www.nasa.gov/nasatv/",
+      "license": "NASA icerikleri kamu mali; NASA kendi canli yayinini herkese acik olarak dagitir."
+    },
+    {
+      "id": "apple-hls-example",
+      "name": "Apple HLS Ornek Yayin",
+      "publisher": "Apple Inc.",
+      "url": "https://devstreaming-cdn.apple.com/videos/streaming/examples/img_bipbop_adv_example_fmp4/master.m3u8",
+      "logo": "",
+      "country": "ABD",
+      "category": "Test",
+      "type": "TV",
+      "sourcePage": "https://developer.apple.com/streaming/examples/",
+      "license": "Apple tarafindan gelistiriciler icin yayimlanmis resmi ornek HLS akisi. Oynatici testi icindir."
+    },
+    {
+      "id": "soma-groove-salad",
+      "name": "SomaFM Groove Salad",
+      "publisher": "SomaFM",
+      "url": "https://ice1.somafm.com/groovesalad-128-mp3",
+      "logo": "https://somafm.com/img3/groovesalad-400.jpg",
+      "country": "ABD",
+      "category": "Elektronik",
+      "type": "RADIO",
+      "sourcePage": "https://somafm.com/groovesalad/",
+      "license": "SomaFM ucretsiz ve reklamsiz dinlemeye acik resmi akis adresleri yayimlar."
+    },
+    {
+      "id": "soma-drone-zone",
+      "name": "SomaFM Drone Zone",
+      "publisher": "SomaFM",
+      "url": "https://ice1.somafm.com/dronezone-128-mp3",
+      "logo": "https://somafm.com/img3/dronezone-400.jpg",
+      "country": "ABD",
+      "category": "Ambient",
+      "type": "RADIO",
+      "sourcePage": "https://somafm.com/dronezone/",
+      "license": "SomaFM ucretsiz ve reklamsiz dinlemeye acik resmi akis adresleri yayimlar."
+    },
+    {
+      "id": "soma-secret-agent",
+      "name": "SomaFM Secret Agent",
+      "publisher": "SomaFM",
+      "url": "https://ice1.somafm.com/secretagent-128-mp3",
+      "logo": "https://somafm.com/img3/secretagent-400.jpg",
+      "country": "ABD",
+      "category": "Lounge",
+      "type": "RADIO",
+      "sourcePage": "https://somafm.com/secretagent/",
+      "license": "SomaFM ucretsiz ve reklamsiz dinlemeye acik resmi akis adresleri yayimlar."
+    },
+    {
+      "id": "big-buck-bunny",
+      "name": "Big Buck Bunny",
+      "publisher": "Blender Foundation",
+      "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Big_buck_bunny_poster_big.jpg",
+      "country": "Hollanda",
+      "category": "Animasyon",
+      "type": "MOVIE",
+      "sourcePage": "https://peach.blender.org/",
+      "license": "Creative Commons Attribution 3.0 - Blender Foundation. Serbest dagitima acik."
+    },
+    {
+      "id": "sintel",
+      "name": "Sintel",
+      "publisher": "Blender Foundation",
+      "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4",
+      "logo": "",
+      "country": "Hollanda",
+      "category": "Animasyon",
+      "type": "MOVIE",
+      "sourcePage": "https://durian.blender.org/",
+      "license": "Creative Commons Attribution 3.0 - Blender Foundation. Serbest dagitima acik."
+    },
+    {
+      "id": "tears-of-steel",
+      "name": "Tears of Steel",
+      "publisher": "Blender Foundation",
+      "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4",
+      "logo": "",
+      "country": "Hollanda",
+      "category": "Bilim Kurgu",
+      "type": "MOVIE",
+      "sourcePage": "https://mango.blender.org/",
+      "license": "Creative Commons Attribution 3.0 - Blender Foundation. Serbest dagitima acik."
+    },
+    {
+      "id": "elephants-dream",
+      "name": "Elephants Dream",
+      "publisher": "Blender Foundation",
+      "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+      "logo": "",
+      "country": "Hollanda",
+      "category": "Animasyon",
+      "type": "MOVIE",
+      "sourcePage": "https://orange.blender.org/",
+      "license": "Creative Commons Attribution 2.5 - Blender Foundation. Serbest dagitima acik."
+    }
+  ]
+}
